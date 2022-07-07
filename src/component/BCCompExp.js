@@ -21,7 +21,7 @@ const BCCompExp = (props) => {
     <div className="flex w-full h-full flex-wrap items-center rounded-3xl bg-slate-700 bg-opacity-50 overflow-auto">
       <button
         onClick={handleClickCancel}
-        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black"
+        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black hover:scale-125"
       >
         X
       </button>
@@ -34,7 +34,7 @@ const BCCompExp = (props) => {
               alt=""
             />
             <div>
-              <div>{exp.company}</div>
+              <div className="font-bold">{exp.company}</div>
               <div>{exp.role}</div>
               <div>{exp.duration}</div>
             </div>

@@ -6,7 +6,7 @@ const BCCompEduc = (props) => {
     <div className="flex w-full h-full flex-wrap items-center justify-center px-10  rounded-3xl bg-slate-700 bg-opacity-50 overflow-auto">
       <button
         onClick={handleClickCancel}
-        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black"
+        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black hover:scale-125"
       >
         X
       </button>

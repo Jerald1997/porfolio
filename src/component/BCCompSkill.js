@@ -5,8 +5,6 @@ import { FaJsSquare } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { FaPowerOff } from "react-icons/fa";
-// import { FaReact } from "react-icons/fa";
-// import { FaReact } from "react-icons/fa";
 
 const fronts = [
   {
@@ -90,10 +88,10 @@ const skillSections = [
 const BCCompSkill = (props) => {
   const handleClickCancel = () => props.defaultDisplay();
   return (
-    <div className="flex w-full h-full flex-wrap items-center rounded-3xl bg-slate-700 bg-opacity-50 overflow-auto">
+    <div className="flex w-full h-full flex-wrap items-center rounded-3xl bg-slate-700 bg-opacity-50 overflow-auto p-2">
       <button
         onClick={handleClickCancel}
-        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black"
+        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black hover:scale-125"
       >
         X
       </button>
@@ -104,11 +102,11 @@ const BCCompSkill = (props) => {
             key={skSection.sec}
           >
             <div className="text mt-2 ml-5 font-bold">{skSection.sec}</div>
-            <div className="flex flex-row flex-wrap justify-center m-auto">
-              <div className="flex-row sm:flex flex-wrap">
+            <div className="flex flex-wrap justify-center m-auto">
+              <div className="flex-row sm:flex flex-wrap my-3">
                 {skSection.contents.map((cont, index) => (
                   <div
-                    className="flex items-center text-xl mx-3 my-1"
+                    className="flex items-center text-md mx-3 my-1"
                     key={index}
                   >
                     <div>{cont.logo}</div>
@@ -121,7 +119,7 @@ const BCCompSkill = (props) => {
         ))}
 
         <section className="bg-slate-700 bg-opacity-50 flex-row rounded-md">
-          <div className="text mt-2 ml-2">Other Skills</div>
+          <div className="font-bold mt-2 ml-5 text-lg md:text-2xl">Other Skills</div>
           <ul className="text-sm list-disc ml-10">
             <li>
               Understanding how electronics are represented visually, and the

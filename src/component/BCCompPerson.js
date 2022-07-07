@@ -3,9 +3,9 @@ import { FaClipboardCheck, FaEnvelope, FaLinkedin, FaMapMarkerAlt } from "react-
 
 const BCCompPerson = (props) => {
   const emailDefault = (
-    <div className="flex flex-wrap items-center text-white">
+    <div className="flex flex-wrap items-center hover:text-red-500 hover:underline underline-offset-8">
       <FaEnvelope className="w-9 h-auto md:w-20 md:h-auto mr-3" />
-      <div>jeraldregidor1997@gmail.com</div>
+      <div className="text-white">jeraldregidor1997@gmail.com</div>
     </div>
   );
 
@@ -30,7 +30,7 @@ const BCCompPerson = (props) => {
     <div className="flex w-full h-full flex-wrap items-center px-10  rounded-3xl bg-slate-700 bg-opacity-50 overflow-auto">
       <button
         onClick={handleClickCancel}
-        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black"
+        className="absolute top-6 right-6 bg-red-500 w-6 rounded-full font-bold ring-1 ring-black hover:scale-125"
       >
         X
       </button>
@@ -39,24 +39,24 @@ const BCCompPerson = (props) => {
           href="https://goo.gl/maps/W6B4ogcyaNdbHSKZ9"
           target="_blank"
           rel="noreferrer"
+          className="hover:scale-110"
         >
-          <div className="flex flex-row items-center flex-wrap">
+          <div className="flex flex-row items-center flex-wrap hover:text-green-500 hover:underline underline-offset-8">
             <FaMapMarkerAlt className="w-9 h-auto md:w-20 md:h-20 mr-2" />
             <div className="text-white">Mamatid, Cabuyao, Laguna</div>
           </div>
         </a>
         <button
           onClick={handleEmailClick}
-          className="flex flex-row items-center flex-wrap mr-1"
+          className="flex flex-row items-center flex-wrap mr-1 hover:scale-110"
         >
-          {/* <FaEnvelope className="w-9 h-auto md:w-20 md:h-auto mr-3" />
-          <div className="text-white">jeraldregidor1997@gmail.com</div> */}
           {emailSection}
         </button>
         <a
           href="https://www.linkedin.com/in/jerald-regidor-614326223/"
           target="_blank"
           rel="noreferrer"
+          className="hover:scale-110 hover:text-blue-500 hover:underline underline-offset-8"
         >
           <div className="flex flex-row items-center flex-wrap">
             <FaLinkedin className="w-9 h-auto md:w-20 md:h-auto mr-2" />
