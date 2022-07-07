@@ -1,14 +1,11 @@
 import React from "react";
 
 const Card = (props) => {
-
-  const handleHover = () => props.hoverDisplay();
-  const handleHovOut = () => props.defaultDisplay();
+  const handleClick = () => props.clickDisplay();
 
   return (
     <div
-      onMouseOver={handleHover}
-      onMouseOut={handleHovOut}
+      onClick={handleClick}
       className="m-1 text-white bg-gradient-to-tr from-blue-600 to-red-900 ring-2 ring-black ring-insets p-0.5 md:p-6"
     >
       <div className="flex justify-center items-center">{props.logo}</div>

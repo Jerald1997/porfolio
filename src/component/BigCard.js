@@ -1,9 +1,10 @@
 import React from "react";
 
 const BigCard = (props) => {
-
   return (
-    <div className="flex flex-wrap items-center justify-center w-full md:mt-20 h-full">
+    <div 
+    className="w-full h-auto flex items-center justify-center absolute bottom-0 top-0"
+    >
       {props.comp}
     </div>
   );
